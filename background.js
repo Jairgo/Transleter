@@ -80,7 +80,7 @@ const showTranslate = message => {
         {
             type: 'basic',
             title: 'Translater',
-            message: message || 'Translater!',
+            message: message || 'Guardado!',
             iconUrl: './assets/icons/128.png',
         }
     );
