@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="assets/css/popup.css">
 </head>
@@ -11,12 +12,32 @@
         </div>
         <div id="translate-containers">
             <div class="translate-form">
-                <label for="text">Traduce cualquier texto a ingles</label>
-                <textarea name="text" id="translate-text" placeholder="Introduce texto a traducir"></textarea>
+                </br>
+                <label>Traducir de:</label>
+                <input list="fromLangList" name="fromLanguages" id="fromId" />
+                <datalist id="fromLangList">
+                    <option value="es">Espanol</option>
+                    <option value="en">Ingles</option>
+                    <option value="it">Italiano</option>
+                    <option value="fr">Frances</option>
+                    <option value="pt">Portugues</option>
+                    <option value="ja">Japones</option>
+                </datalist>
+                <label>Hacia:</label>
+                <input list="toLangList" name="toLanguages" id="toId" />
+                <datalist id="toLangList">
+                    <option value="es">Espanol</option>
+                    <option value="en">Ingles</option>
+                    <option value="it">Italiano</option>
+                    <option value="fr">Frances</option>
+                    <option value="pt">Portugues</option>
+                    <option value="ja">Japones</option>
+                </datalist>
+                <textarea name="text" id="translate-text" placeholder="Introduce texto a traducir" rows="5"></textarea>
             </div>
             <div class=translate-buttons>
                 <button class="button" id="translate-reset">
-                    Reset
+                    Limpiar
                 </button>
                 <button class="button primary" id="translate-button">
                     Traducir

@@ -1,5 +1,5 @@
 body {
-    width: 250px;
+    width: 470px;
 }
 
 #translate-wrapper {
@@ -10,6 +10,10 @@ body {
     font-size: 12px;
     margin: 0;
     margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    line-height: 150%;
 }
 
 .button {
@@ -62,7 +66,7 @@ textarea {
     padding: 8px;
     border-radius: 4px;
     display: block;
-    width: 224px;
+    width: 440px;
     margin-top: 5px;
 }
 
