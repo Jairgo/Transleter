@@ -1,0 +1,39 @@
+{
+    "name": "Translater Cool",
+    "description": "Traductor Cool Sencillo",
+    "version": "1.0",
+    "author": "jairg_v",
+    "manifest_version": 3,
+    "icons": {
+        "32": "/assets/icons/32.png",
+        "128": "/assets/icons/128.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "32": "/assets/icons/32.png",
+            "128": "/assets/icons/128.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "notifications",
+        "contextMenus"
+    ]
+}
